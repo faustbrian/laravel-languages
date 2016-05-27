@@ -12,9 +12,6 @@
 namespace DraperStudio\Languages;
 
 use DraperStudio\Languages\Console\SeedLanguages;
-use DraperStudio\Languages\Models\Language;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Cache;
 
 /**
  * Class ServiceProvider.

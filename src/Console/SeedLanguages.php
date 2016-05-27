@@ -47,6 +47,6 @@ class SeedLanguages extends Command
             ]);
         }
 
-        $this->getOutput()->writeln("<info>Seeded:</info> Languages");
+        $this->getOutput()->writeln('<info>Seeded:</info> Languages');
     }
 }
