@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Languages\Console;
 
-use DB;
 use BrianFaust\Languages\Models\Language;
+use DB;
 use Illuminate\Console\Command;
 
 class SeedLanguages extends Command
@@ -36,8 +36,8 @@ class SeedLanguages extends Command
 
         foreach ($data as $language) {
             Language::create([
-                'code' => $language['code'],
-                'name' => $language['name'],
+                'code'        => $language['code'],
+                'name'        => $language['name'],
                 'native_name' => $language['nativeName'],
             ]);
         }
