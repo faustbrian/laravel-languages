@@ -12,8 +12,9 @@
 namespace BrianFaust\Languages;
 
 use BrianFaust\Languages\Console\SeedLanguages;
+use BrianFaust\ServiceProvider\ServiceProvider;
 
-class ServiceProvider extends \BrianFaust\ServiceProvider\ServiceProvider
+class LanguagesServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
