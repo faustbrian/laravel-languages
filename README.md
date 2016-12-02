@@ -11,15 +11,13 @@ $ composer require faustbrian/laravel-languages
 And then include the service provider within `app/config/app.php`.
 
 ``` php
-'providers' => [
-    'BrianFaust\Languages\ServiceProvider'
-];
+BrianFaust\Languages\LanguagesServiceProvider::class
 ```
 
 To get started, you'll need to publish the vendor assets and migrate:
 
 ```bash
-php artisan vendor:publish && php artisan migrate
+php artisan vendor:publish --provider="BrianFaust\Languages\LanguagesServiceProvider" && php artisan migrate
 ```
 
 Now you can seed the languages into the database like this.
@@ -31,8 +29,7 @@ php artisan languages:seed
 ## Usage
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+...
 ```
 
 ## Security
