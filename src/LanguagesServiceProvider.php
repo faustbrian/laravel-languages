@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Languages;
 
 use BrianFaust\Languages\Console\SeedLanguages;
@@ -19,7 +21,7 @@ class LanguagesServiceProvider extends ServiceProvider
     /**
      * Bootstrap the application services.
      */
-    public function boot()
+    public function boot(): void
     {
         parent::boot();
 
@@ -29,7 +31,7 @@ class LanguagesServiceProvider extends ServiceProvider
     /**
      * Register the application services.
      */
-    public function register()
+    public function register(): void
     {
         parent::register();
 
@@ -41,7 +43,7 @@ class LanguagesServiceProvider extends ServiceProvider
      *
      * @return string
      */
-    public function getPackageName()
+    public function getPackageName(): string
     {
         return 'languages';
     }
