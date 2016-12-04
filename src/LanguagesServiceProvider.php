@@ -23,9 +23,9 @@ declare(strict_types=1);
 namespace BrianFaust\Languages;
 
 use BrianFaust\Languages\Console\SeedLanguages;
-use BrianFaust\ServiceProvider\ServiceProvider;
+use BrianFaust\ServiceProvider\AbstractServiceProvider;
 
-class LanguagesServiceProvider extends ServiceProvider
+class LanguagesServiceProvider extends AbstractServiceProvider
 {
     /**
      * Bootstrap the application services.
