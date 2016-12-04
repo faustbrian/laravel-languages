@@ -20,7 +20,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Languages\Models;
+namespace BrianFaust\Languages;
 
 use Illuminate\Database\Eloquent\Model;
 

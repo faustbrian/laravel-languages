@@ -22,7 +22,7 @@ declare(strict_types=1);
 
 namespace BrianFaust\Languages\Console;
 
-use BrianFaust\Languages\Models\Language;
+use BrianFaust\Languages\Language;
 use DB;
 use Illuminate\Console\Command;
 
@@ -38,10 +38,8 @@ class SeedLanguages extends Command
      */
     protected $description = 'Command description.';
 
-    public function fire()
+    public function fire(): void
     {
-        DB::table('languages')->delete();
-
         $data = base_path('vendor/faustbrian/laravel-languages/resources/languages.json');
         $data = json_decode(file_get_contents($data), true);
 
