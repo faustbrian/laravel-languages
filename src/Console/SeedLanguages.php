@@ -23,7 +23,6 @@ declare(strict_types=1);
 namespace BrianFaust\Languages\Console;
 
 use BrianFaust\Languages\Language;
-use DB;
 use Illuminate\Console\Command;
 
 class SeedLanguages extends Command
