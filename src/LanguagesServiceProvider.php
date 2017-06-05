@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Languages.
  *
@@ -14,38 +11,25 @@ declare(strict_types=1);
 
 namespace BrianFaust\Languages;
 
-use BrianFaust\Languages\Console\SeedLanguages;
-use BrianFaust\ServiceProvider\AbstractServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class LanguagesServiceProvider extends AbstractServiceProvider
+class LanguagesServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
      */
-    public function boot(): void
+    public function boot()
     {
-        parent::boot();
-
-        $this->publishMigrations();
+        $this->publishes([
+            __DIR__.'/../database/migrations' => database_path('migrations'),
+        ], 'migrations');
     }
 
     /**
      * Register the application services.
      */
-    public function register(): void
+    public function register()
     {
-        parent::register();
-
-        $this->commands(SeedLanguages::class);
-    }
-
-    /**
-     * Get the default package name.
-     *
-     * @return string
-     */
-    public function getPackageName(): string
-    {
-        return 'languages';
+        $this->commands(Console\Commands\SeedLanguages::class);
     }
 }

@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Languages.
  *
@@ -14,7 +11,7 @@ declare(strict_types=1);
 
 namespace BrianFaust\Tests\Languages;
 
-use BrianFaust\Languages\Console\SeedLanguages;
+use BrianFaust\Languages\Console\Commands\SeedLanguages;
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 
 class ServiceProviderTest extends AbstractTestCase
