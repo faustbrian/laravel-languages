@@ -30,6 +30,14 @@ class LanguagesServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->registerCommands();
+    }
+
+    /**
+     * Register the console commands.
+     */
+    private function registerCommands()
+    {
         $this->commands(Console\Commands\SeedLanguages::class);
     }
 }
