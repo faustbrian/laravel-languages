@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Tests\Languages;
 
-use BrianFaust\Languages\Console\Commands\SeedLanguages;
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
+use BrianFaust\Languages\Console\Commands\SeedLanguages;
 
 class ServiceProviderTest extends AbstractTestCase
 {

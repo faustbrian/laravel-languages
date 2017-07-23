@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Languages\Console\Commands;
 
-use BrianFaust\Languages\Language;
 use Illuminate\Console\Command;
+use BrianFaust\Languages\Language;
 
 class SeedLanguages extends Command
 {
