@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Tests\Languages;
 
-use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 use BrianFaust\Languages\Console\Commands\SeedLanguages;
+use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 
 class ServiceProviderTest extends AbstractTestCase
 {
