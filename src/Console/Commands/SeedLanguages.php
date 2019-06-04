@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Languages.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Languages\Console\Commands;
+namespace Artisanry\Languages\Console\Commands;
 
-use BrianFaust\Languages\Language;
+use Artisanry\Languages\Language;
 use Illuminate\Console\Command;
 
 class SeedLanguages extends Command
@@ -30,7 +30,7 @@ class SeedLanguages extends Command
 
     public function fire()
     {
-        $data = base_path('vendor/faustbrian/laravel-languages/resources/languages.json');
+        $data = base_path('vendor/artisanry/languages/resources/languages.json');
         $data = json_decode(file_get_contents($data), true);
 
         foreach ($data as $language) {
